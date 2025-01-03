@@ -36,7 +36,7 @@ const __dirname = dirname(__filename)
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 function createRandomId() {
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+  const characters = 'DROVEABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
   let id = ''
   for (let i = 0; i < 10; i++) {
     id += characters.charAt(Math.floor(Math.random() * characters.length))
